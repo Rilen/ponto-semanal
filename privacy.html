@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — Ponto Semanal</title>
+  <link rel="canonical" href="https://rilen.github.io/ponto-semanal/privacy.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Política de Privacidade — Ponto Semanal</h1>
+    <p><strong>Versão da extensão:</strong> 1.4.1<br>
+    <strong>Versão desta política:</strong> 1.0<br>
+    <strong>Vigência:</strong> <time datetime="2026-10-28">28/10/2026</time><br>
+    <strong>Contato:</strong> <a href="https://github.com/Rilen/ponto-semanal/issues">canal público do projeto</a><br>
+    <strong>URL pública:</strong> <a href="https://rilen.github.io/ponto-semanal/privacy.html">https://rilen.github.io/ponto-semanal/privacy.html</a></p>
+    <p class="notice">O Ponto Semanal é uma ferramenta independente. Não é sistema oficial de ponto e não possui vínculo, endosso, autorização ou representação da Prefeitura de Rio das Ostras, do NewEasy ou do Jubarte.</p>
+  </header>
+
+  <section class="card">
+    <h2>1. Dados tratados</h2>
+    <p>Quando o usuário clica em sincronizar ou importar, a extensão lê o conteúdo da página de ponto autorizada e trata datas, marcações de entrada/saída, horas, estados e ocorrências/tags exibidas no espelho.</p>
+    <p>Também são tratados localmente configurações de jornada e almoço, registros derivados, histórico semanal/mensal, backups, simulações de saída e resumos/diagnósticos gerados a pedido do usuário.</p>
+    <p>A extensão não acessa senha, cookie, token de autenticação, dados financeiros, dados de saúde, localização, histórico de navegação ou conteúdo de outros sites.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Finalidade</h2>
+    <p>Os dados são usados exclusivamente para conferência pessoal da jornada, cálculo de progresso e saldos estimados, histórico, conferência com a chefia, simulação de saída e diagnóstico técnico solicitado pelo usuário.</p>
+    <p>Não há publicidade, perfilamento, venda, empréstimo, análise de crédito ou uso para finalidade alheia a essa finalidade única.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Armazenamento local</h2>
+    <p>Os dados ficam em <code>chrome.storage.local</code>, no perfil do Chrome do próprio usuário, sob a chave <code>pontoSemanalState_v2</code> (e a chave legada <code>pontoSemanalState</code>, quando aplicável).</p>
+    <p>Não há <code>storage.sync</code>, servidor da extensão, telemetria, analytics ou transmissão para terceiros. A extensão não aplica criptografia adicional de aplicação ao armazenamento local; o conteúdo fica sujeito às proteções do perfil do Chrome e do sistema operacional.</p>
+    <p>O consentimento de privacidade é registrado localmente como versão e data; ele não é transmitido e serve apenas para não repetir o aviso.</p>
+  </section>
+
+  <section class="card">
+    <h2>4. Retenção e exclusão</h2>
+    <p>Os dados permanecem localmente enquanto a extensão estiver instalada e não forem removidos. Não há expiração automática.</p>
+    <p>O usuário pode apagar os dados removendo a extensão ou limpando os dados da extensão em <code>chrome://extensions</code>. Não há cópia em servidor do desenvolvedor.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. Compartilhamento e cópia manual</h2>
+    <p>A extensão não compartilha dados automaticamente. Resumos e diagnóstico são copiados para a área de transferência somente após clique do usuário. O usuário decide se e onde colar o conteúdo.</p>
+    <p>WhatsApp, e-mail, sistemas de mensagens ou qualquer destinatário escolhido pelo usuário são serviços de terceiros e aplicam suas próprias políticas. A extensão não envia mensagens automaticamente.</p>
+  </section>
+
+  <section class="card">
+    <h2>6. Diagnóstico técnico</h2>
+    <p>O diagnóstico é uma ferramenta avançada de manutenção. A partir da versão 1.4.1, ele não inclui query strings, fragmentos de URL nem texto livre das páginas; candidatos de mês/ano são reduzidos a metadados como chave do mês, fonte e confiança.</p>
+    <p>O relatório ainda pode conter datas, horários, estados e tags de ponto necessários ao diagnóstico. O usuário deve revisá-lo antes de compartilhar.</p>
+  </section>
+
+  <section class="card">
+    <h2>7. Permissões</h2>
+    <ul>
+      <li><strong>storage:</strong> guardar estado, histórico, configurações e simulações localmente.</li>
+      <li><strong>scripting:</strong> injetar o extrator local na aba autorizada após ação do usuário.</li>
+      <li><strong>sidePanel:</strong> exibir o painel lateral.</li>
+      <li><strong>host_permissions:</strong> ler somente os dois domínios autorizados, por HTTPS: <code>appriodasostras.pontobiometrico.com.br</code> e <code>jubarte.riodasostras.rj.gov.br</code>.</li>
+    </ul>
+    <p>A validação de domínio usa hostname exato e não aceita URLs que apenas contenham o nome do domínio.</p>
+  </section>
+
+  <section class="card">
+    <h2>8. Segurança</h2>
+    <p>A extensão não transmite dados pela rede, não executa código remoto e não usa <code>eval</code>. O código é empacotado localmente e o acesso às páginas é limitado aos domínios autorizados.</p>
+  </section>
+
+  <section class="card">
+    <h2>9. Limited Use</h2>
+    <p>O uso de informações recebidas de APIs do Google observará a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Limited Use:</p>
+    <p><em>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</em></p>
+  </section>
+
+  <section class="card">
+    <h2>10. Alterações e contato</h2>
+    <p>Alterações materiais serão refletidas na versão desta política e, quando necessário, na versão da extensão. O consentimento local de privacidade é versionado para que mudanças relevantes possam ser apresentadas novamente.</p>
+    <p>Dúvidas, solicitações de acesso/exclusão de dados locais e relatos de problemas: <a href="https://github.com/Rilen/ponto-semanal/issues">canal público do projeto no GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p>Ponto Semanal 1.4.1 — página informativa independente. Não é sistema oficial de ponto e não possui vínculo ou endosso institucional.</p>
+    <p><a href="index.html">Voltar</a></p>
+  </footer>
+</main>
+</body>
+</html>
