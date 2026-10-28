@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como instalar e usar — Ponto Semanal</title>
+  <link rel="canonical" href="https://rilen.github.io/ponto-semanal/guia.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="guide-hero">
+    <p class="eyebrow">Ponto Semanal 1.4.1</p>
+    <h1>Como instalar e usar</h1>
+    <p class="lead">Guia passo a passo para instalar a extensão, importar seus registros e entender os números do painel.</p>
+    <p class="notice" role="status"><strong>Em preparação para disponibilização na Chrome Web Store.</strong> As etapas de instalação pela loja passam a valer quando a extensão for publicada. O link oficial será divulgado nesta página; não há link de instalação disponível antes disso.</p>
+  </header>
+
+  <nav class="guide-nav" aria-label="Navegação do guia">
+    <a href="index.html">Início</a>
+    <a href="#instalar">Instalar</a>
+    <a href="#abrir">Abrir o painel</a>
+    <a href="#importar">Importar</a>
+    <a href="#entender">Entender os números</a>
+    <a href="#simular">Simular saída</a>
+    <a href="#resumo">Copiar resumo</a>
+    <a href="#problemas">Problemas comuns</a>
+    <a href="#remover">Remover e apagar dados</a>
+    <a href="privacy.html">Privacidade</a>
+  </nav>
+
+  <section class="card guide-section" id="instalar">
+    <h2>1. Instalar a extensão</h2>
+    <p>A instalação será feita pela Chrome Web Store, como qualquer outra extensão do Chrome. Não é necessário ativar o modo desenvolvedor.</p>
+    <ol class="steps">
+      <li><strong>Atualize o Chrome</strong> para a versão 116 ou mais recente. O painel lateral usado pela extensão depende dessa versão.</li>
+      <li><strong>Abra o link da Chrome Web Store</strong> que será divulgado nesta página quando a extensão estiver disponível.</li>
+      <li>Clique em <strong>Usar no Chrome</strong> ou <strong>Adicionar ao Chrome</strong> e confirme a instalação.</li>
+      <li>Fixe o ícone de relógio na barra: clique no ícone de peças (extensões), encontre <strong>Ponto Semanal</strong> e clique no alfinete.</li>
+    </ol>
+    <p class="callout">Enquanto a extensão não estiver publicada, não existe link de instalação. Não instale cópias de origem desconhecida.</p>
+  </section>
+
+  <section class="card guide-section" id="abrir">
+    <h2>2. Abrir o painel lateral</h2>
+    <ol class="steps">
+      <li>Clique no ícone de relógio do <strong>Ponto Semanal</strong> na barra do Chrome.</li>
+      <li>O painel abre na área lateral do Chrome.</li>
+      <li>Se ele não abrir, veja <a href="#problemas">Problemas comuns</a>.</li>
+    </ol>
+  </section>
+
+  <section class="card guide-section" id="importar">
+    <h2>3. Entrar no portal e importar os registros</h2>
+    <p>A extensão não cria conta e não pede sua senha. Você continua entrando normalmente no portal do ponto.</p>
+    <ol class="steps">
+      <li>Abra o <strong>NewEasy/NewPonto</strong> ou o <strong>Jubarte</strong> em uma aba do Chrome.</li>
+      <li>Faça login normalmente e deixe a página do espelho de ponto aberta.</li>
+      <li>No painel, na primeira utilização, leia o aviso <strong>Antes de usar</strong> e clique em <strong>Li e entendo</strong>.</li>
+      <li>Clique em <strong>Puxar do NewEasy / Jubarte</strong>. A extensão lê somente o espelho exibido na aba autorizada e guarda o resultado localmente.</li>
+      <li>Aguarde a mensagem de sincronização. As horas oficiais aparecem nos cartões <strong>Hoje</strong> e <strong>Semana</strong>.</li>
+    </ol>
+
+    <h3>Importar o mês</h3>
+    <p>Abra <strong>Histórico Mensal e Acumulado</strong> e use <strong>Puxar mês do NewPonto</strong> quando o portal estiver exibindo o mês desejado. Depois, use o seletor para consultar os meses que já foram importados.</p>
+    <p>A importação mensal está disponível para o NewPonto. No Jubarte, use a sincronização semanal.</p>
+    <p class="callout">O botão importa o mês que está aparecendo no portal. O seletor do painel serve para consultar meses que já foram importados.</p>
+  </section>
+
+  <section class="card guide-section" id="entender">
+    <h2>4. Entender os números</h2>
+    <ul class="definition-list">
+      <li><strong>Horas oficiais registradas:</strong> total de HRS completas que vieram do espelho de ponto.</li>
+      <li><strong>Horas líquidas estimadas:</strong> horas oficiais com o intervalo de almoço estimado, quando aplicável. É uma estimativa pessoal.</li>
+      <li><strong>Progresso:</strong> proporção de horas oficiais completas em relação à jornada escolhida (30h ou 40h). Não significa elegibilidade para compensação nem quitação da obrigação semanal.</li>
+      <li><strong>Saldo regular estimado:</strong> diferença pessoal nos dias já apurados. Não é banco de horas oficial.</li>
+      <li><strong>Extraordinário pendente:</strong> horas que aguardam reconhecimento. Elas não são aprovadas automaticamente.</li>
+      <li><strong>Aberto, futuro ou não verificado:</strong> não geram débito definitivo. Use o espelho oficial para conferir.</li>
+    </ul>
+
+    <figure class="guide-figure">
+      <img src="images/1280x800-01-hoje-semana.png" alt="Captura ilustrativa do painel Hoje e Semana, com dados fictícios de novembro de 2031: 30 horas semanais, previsão de saída e simulação. Nenhum dado real." loading="lazy">
+      <figcaption>Exemplo ilustrativo com dados fictícios. Os valores não pertencem a nenhum usuário real.</figcaption>
+      <p><a href="images/1280x800-01-hoje-semana.png">Abrir captura em tamanho real</a></p>
+    </figure>
+  </section>
+
+  <section class="card guide-section" id="simular">
+    <h2>5. Simular a saída</h2>
+    <p>No cartão <strong>Hoje</strong>, use o campo <strong>Simular minha saída</strong> para testar um horário antes de sair.</p>
+    <ol class="steps">
+      <li>Digite a saída no formato <strong>HH:MM</strong>.</li>
+      <li>Confira as horas líquidas simuladas e a diferença em relação à meta diária.</li>
+      <li>Se houver diferença negativa, o painel mostra uma projeção para o próximo dia útil elegível.</li>
+      <li>Use <strong>Restaurar previsão</strong> para voltar à sugestão padrão.</li>
+    </ol>
+    <p class="callout">A simulação é pessoal e não altera os registros oficiais. A saída oficial só prevalece quando o portal registra a batida.</p>
+
+    <figure class="guide-figure">
+      <img src="images/1280x800-02-saldo-estimado.png" alt="Captura ilustrativa do painel de saldo pessoal estimado, com dados fictícios: horas oficiais, horas líquidas, diferença e extraordinário pendente." loading="lazy">
+      <figcaption>Saldo pessoal estimado e pendências. Dados fictícios, sem nomes ou registros reais.</figcaption>
+      <p><a href="images/1280x800-02-saldo-estimado.png">Abrir captura em tamanho real</a></p>
+    </figure>
+  </section>
+
+  <section class="card guide-section" id="resumo">
+    <h2>6. Copiar o resumo para WhatsApp</h2>
+    <p>No cartão <strong>Resumo para WhatsApp</strong>, confira o texto curto e clique em <strong>Copiar resumo</strong>.</p>
+    <p>Depois, cole o texto no WhatsApp ou em outro aplicativo, se quiser. A extensão não envia mensagens automaticamente.</p>
+    <p>O resumo mostra horas oficiais, jornada, pendências e saldo regular estimado. Serviço extraordinário aparece como pendente de reconhecimento.</p>
+
+    <figure class="guide-figure">
+      <img src="images/1280x800-03-pendencias-whatsapp.png" alt="Captura ilustrativa das pendências e do resumo para WhatsApp, com dados fictícios e botão de cópia manual." loading="lazy">
+      <figcaption>Pendências e resumo copiável. Nenhuma mensagem é enviada pela extensão.</figcaption>
+      <p><a href="images/1280x800-03-pendencias-whatsapp.png">Abrir captura em tamanho real</a></p>
+    </figure>
+  </section>
+
+  <section class="card guide-section" id="problemas">
+    <h2>7. Problemas comuns</h2>
+    <h3>O painel não abre</h3>
+    <ul>
+      <li>Confirme se o Chrome está atualizado (versão 116 ou mais recente).</li>
+      <li>Confirme se o Ponto Semanal está instalado e ativado em <code>chrome://extensions</code>.</li>
+      <li>Fixe o ícone de relógio na barra e clique nele para abrir o painel lateral.</li>
+      <li>Recarregue a aba do portal e tente novamente.</li>
+      <li>Se a extensão ainda não estiver publicada, aguarde o link oficial nesta página.</li>
+    </ul>
+
+    <h3>Os registros não aparecem</h3>
+    <ul>
+      <li>Confirme se você está logado no portal e na página do espelho de ponto.</li>
+      <li>Confirme se a semana ou o mês desejado está selecionado no portal.</li>
+      <li>Aceite o aviso de privacidade, se ele estiver visível, e clique em <strong>Puxar do NewEasy / Jubarte</strong>.</li>
+      <li>Recarregue a página do portal e tente novamente.</li>
+      <li>Um dia sem registro não é automaticamente uma falta. O painel deve mostrar a pendência para conferência.</li>
+    </ul>
+
+    <h3>A sessão expirou</h3>
+    <ul>
+      <li>Volte ao portal e faça login novamente.</li>
+      <li>Recarregue a página e clique em sincronizar no painel.</li>
+      <li>A extensão nunca pede sua senha e não acessa cookies ou tokens.</li>
+    </ul>
+
+    <h3>A jornada está aberta</h3>
+    <ul>
+      <li>Quando existe entrada e ainda não há saída, o painel mostra <strong>aberto</strong> ou <strong>em andamento</strong>.</li>
+      <li>Não há horas oficiais definitivas enquanto a saída não for registrada.</li>
+      <li>A simulação de saída é apenas uma estimativa pessoal.</li>
+      <li>Confira o espelho oficial para registrar ou corrigir a batida conforme o procedimento do órgão.</li>
+    </ul>
+
+    <h3>O mês aparece incompleto</h3>
+    <ul>
+      <li>Importe o mês com a página do portal exibindo esse mês.</li>
+      <li>Dias sem registro importado aparecem como cobertura parcial, não como falta.</li>
+      <li>Se precisar de ajuda, use o contato de suporte.</li>
+    </ul>
+  </section>
+
+  <section class="card guide-section" id="remover">
+    <h2>8. Remover a extensão e apagar os dados locais</h2>
+    <ol class="steps">
+      <li>Abra <code>chrome://extensions</code>.</li>
+      <li>Encontre <strong>Ponto Semanal</strong>.</li>
+      <li>Clique em <strong>Remover</strong> e confirme.</li>
+    </ol>
+    <p>Os registros, históricos, configurações e simulações ficam no armazenamento local do Chrome. Ao remover a extensão, esse armazenamento local é apagado. Não existe cópia em servidor do desenvolvedor.</p>
+    <p>Se a opção de limpar dados da extensão estiver disponível na sua versão do Chrome, ela também remove o armazenamento local.</p>
+    <p>A extensão não substitui o espelho de ponto nem a conferência institucional. Guarde os comprovantes oficiais conforme as regras do órgão.</p>
+  </section>
+
+  <section class="card guide-section">
+    <h2>Privacidade e suporte</h2>
+    <p>Leia a <a href="privacy.html">Política de Privacidade</a> para saber quais dados são tratados, como ficam armazenados e como apagá-los.</p>
+    <p>Dúvidas, problemas ou solicitações: <a href="https://github.com/Rilen/ponto-semanal/issues">canal público do projeto no GitHub</a>.</p>
+    <p class="notice">O Ponto Semanal é uma ferramenta independente. Não é sistema oficial de ponto e não possui vínculo, endosso, autorização ou representação da Prefeitura de Rio das Ostras, do NewEasy ou do Jubarte.</p>
+  </section>
+
+  <footer>
+    <p>Ponto Semanal 1.4.1 — guia informativo independente.</p>
+    <p><a href="index.html">Voltar ao início</a> · <a href="privacy.html">Política de Privacidade</a></p>
+  </footer>
+</main>
+</body>
+</html>
