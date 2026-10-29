@@ -11,82 +11,116 @@
 <main>
   <header>
     <h1>Política de Privacidade — Ponto Semanal</h1>
-    <p><strong>Versão da extensão:</strong> 1.4.1<br>
-    <strong>Versão desta política:</strong> 1.0<br>
-    <strong>Vigência:</strong> <time datetime="2026-10-28">28/10/2026</time><br>
+    <p><strong>Versão da extensão:</strong> 1.5.0<br>
+    <strong>Versão desta política:</strong> 1.1<br>
+    <strong>Vigência:</strong> <time datetime="2026-10-29">29/10/2026</time><br>
     <strong>Contato:</strong> <a href="https://github.com/Rilen/ponto-semanal/issues">canal público do projeto</a><br>
     <strong>URL pública:</strong> <a href="https://rilen.github.io/ponto-semanal/privacy.html">https://rilen.github.io/ponto-semanal/privacy.html</a></p>
-    <p class="notice">O Ponto Semanal é uma ferramenta independente. Não é sistema oficial de ponto e não possui vínculo, endosso, autorização ou representação da Prefeitura de Rio das Ostras, do NewEasy ou do Jubarte.</p>
   </header>
 
   <section class="card">
-    <h2>1. Dados tratados</h2>
-    <p>Quando o usuário clica em sincronizar ou importar, a extensão lê o conteúdo da página de ponto autorizada e trata datas, marcações de entrada/saída, horas, estados e ocorrências/tags exibidas no espelho.</p>
-    <p>Também são tratados localmente configurações de jornada e almoço, registros derivados, histórico semanal/mensal, backups, simulações de saída e resumos/diagnósticos gerados a pedido do usuário.</p>
+    <h2>1. Ferramenta independente</h2>
+    <p>O Ponto Semanal é uma ferramenta independente de conferência pessoal de horas e planejamento da jornada.</p>
+    <p class="notice">Ele <strong>não é sistema oficial de ponto</strong> e <strong>não possui vínculo, endosso, autorização ou representação</strong> da Prefeitura de Rio das Ostras, do NewEasy ou do Jubarte. A menção aos nomes dos sistemas descreve apenas compatibilidade técnica.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Dados tratados</h2>
+    <p>Quando o usuário clica em sincronizar ou importar, a extensão lê o conteúdo da página de ponto autorizada e trata:</p>
+    <ul>
+      <li>datas, marcações de entrada/saída, horas trabalhadas e ocorrências/tags exibidas no espelho;</li>
+      <li>configurações escolhidas pelo usuário, como jornada de 30h ou 40h e intervalo de almoço;</li>
+      <li>observações opcionais de até 80 caracteres digitadas pelo usuário no ledger de compensação;</li>
+      <li>registros derivados: progresso, saldos pessoais estimados, histórico semanal/mensal, ledger de créditos e débitos de compensação, backups de valores manuais/anteriores;</li>
+      <li>simulações de saída e resumos/diagnósticos gerados localmente.</li>
+    </ul>
     <p>A extensão não acessa senha, cookie, token de autenticação, dados financeiros, dados de saúde, localização, histórico de navegação ou conteúdo de outros sites.</p>
   </section>
 
   <section class="card">
-    <h2>2. Finalidade</h2>
-    <p>Os dados são usados exclusivamente para conferência pessoal da jornada, cálculo de progresso e saldos estimados, histórico, conferência com a chefia, simulação de saída e diagnóstico técnico solicitado pelo usuário.</p>
+    <h2>3. Finalidade</h2>
+    <p>Os dados são usados exclusivamente para:</p>
+    <ul>
+      <li>exibir a conferência pessoal da jornada;</li>
+      <li>calcular progresso, saldos e estimativas pessoais;</li>
+      <li>manter histórico e permitir conferência com a chefia;</li>
+      <li>simular horários de saída;</li>
+      <li>gerar um diagnóstico técnico quando o próprio usuário solicitar.</li>
+    </ul>
     <p>Não há publicidade, perfilamento, venda, empréstimo, análise de crédito ou uso para finalidade alheia a essa finalidade única.</p>
   </section>
 
   <section class="card">
-    <h2>3. Armazenamento local</h2>
+    <h2>4. Armazenamento local</h2>
     <p>Os dados ficam em <code>chrome.storage.local</code>, no perfil do Chrome do próprio usuário, sob a chave <code>pontoSemanalState_v2</code> (e a chave legada <code>pontoSemanalState</code>, quando aplicável).</p>
-    <p>Não há <code>storage.sync</code>, servidor da extensão, telemetria, analytics ou transmissão para terceiros. A extensão não aplica criptografia adicional de aplicação ao armazenamento local; o conteúdo fica sujeito às proteções do perfil do Chrome e do sistema operacional.</p>
-    <p>O consentimento de privacidade é registrado localmente como versão e data; ele não é transmitido e serve apenas para não repetir o aviso.</p>
+    <ul>
+      <li>Não há <code>chrome.storage.sync</code>, servidor da extensão, telemetria, analytics ou transmissão para terceiros.</li>
+      <li>A extensão não aplica criptografia adicional de aplicação ao armazenamento local; o conteúdo fica sujeito às proteções do perfil do Chrome e do sistema operacional.</li>
+      <li>O armazenamento local pode conter dados de jornada, observações e backups até que o usuário os apague.</li>
+      <li>O consentimento de privacidade é registrado localmente como versão e data; ele não é transmitido e serve apenas para não repetir o aviso.</li>
+    </ul>
   </section>
 
   <section class="card">
-    <h2>4. Retenção e exclusão</h2>
-    <p>Os dados permanecem localmente enquanto a extensão estiver instalada e não forem removidos. Não há expiração automática.</p>
-    <p>O usuário pode apagar os dados removendo a extensão ou limpando os dados da extensão em <code>chrome://extensions</code>. Não há cópia em servidor do desenvolvedor.</p>
+    <h2>5. Retenção e exclusão</h2>
+    <p>Os dados permanecem no armazenamento local enquanto a extensão estiver instalada e os dados não forem removidos. Não há expiração automática.</p>
+    <p>O usuário pode apagar os dados:</p>
+    <ul>
+      <li>removendo a extensão; ou</li>
+      <li>limpando os dados da extensão em <code>chrome://extensions</code>.</li>
+    </ul>
+    <p>Não há cópia em servidor do desenvolvedor. Se uma versão futura adicionar exclusão dentro da interface, esta política será atualizada.</p>
   </section>
 
   <section class="card">
-    <h2>5. Compartilhamento e cópia manual</h2>
-    <p>A extensão não compartilha dados automaticamente. Resumos e diagnóstico são copiados para a área de transferência somente após clique do usuário. O usuário decide se e onde colar o conteúdo.</p>
+    <h2>6. Compartilhamento e cópia manual</h2>
+    <p>A extensão não compartilha dados automaticamente. Os resumos semanais/mensais e o diagnóstico são colocados na área de transferência somente após clique do usuário. O usuário decide se e onde colar o conteúdo.</p>
     <p>WhatsApp, e-mail, sistemas de mensagens ou qualquer destinatário escolhido pelo usuário são serviços de terceiros e aplicam suas próprias políticas. A extensão não envia mensagens automaticamente.</p>
   </section>
 
   <section class="card">
-    <h2>6. Diagnóstico técnico</h2>
-    <p>O diagnóstico é uma ferramenta avançada de manutenção. A partir da versão 1.4.1, ele não inclui query strings, fragmentos de URL nem texto livre das páginas; candidatos de mês/ano são reduzidos a metadados como chave do mês, fonte e confiança.</p>
-    <p>O relatório ainda pode conter datas, horários, estados e tags de ponto necessários ao diagnóstico. O usuário deve revisá-lo antes de compartilhar.</p>
+    <h2>7. Diagnóstico técnico</h2>
+    <p>O diagnóstico é uma ferramenta avançada de manutenção. A partir da versão 1.4.1, ele não inclui query strings, fragmentos de URL nem texto livre das páginas; os candidatos de mês/ano são reduzidos a metadados como chave do mês, fonte e confiança.</p>
+    <p>O relatório ainda pode conter datas, horários, estados, tags de ponto e observações digitadas pelo usuário, quando necessários ao diagnóstico. O usuário deve revisá-lo antes de compartilhar.</p>
   </section>
 
   <section class="card">
-    <h2>7. Permissões</h2>
+    <h2>8. Permissões</h2>
     <ul>
       <li><strong>storage:</strong> guardar estado, histórico, configurações e simulações localmente.</li>
-      <li><strong>scripting:</strong> injetar o extrator local na aba autorizada após ação do usuário.</li>
+      <li><strong>scripting:</strong> injetar o extrator local na aba autorizada depois de uma ação do usuário.</li>
       <li><strong>sidePanel:</strong> exibir o painel lateral.</li>
-      <li><strong>host_permissions:</strong> ler somente os dois domínios autorizados, por HTTPS: <code>appriodasostras.pontobiometrico.com.br</code> e <code>jubarte.riodasostras.rj.gov.br</code>.</li>
+      <li><strong>host_permissions:</strong> ler somente os dois domínios de ponto autorizados, por HTTPS: <code>appriodasostras.pontobiometrico.com.br</code> e <code>jubarte.riodasostras.rj.gov.br</code>.</li>
     </ul>
     <p>A validação de domínio usa hostname exato e não aceita URLs que apenas contenham o nome do domínio.</p>
   </section>
 
   <section class="card">
-    <h2>8. Segurança</h2>
+    <h2>9. Segurança</h2>
     <p>A extensão não transmite dados pela rede, não executa código remoto e não usa <code>eval</code>. O código é empacotado localmente e o acesso às páginas é limitado aos domínios autorizados.</p>
+    <p>Nenhum sistema é isento de risco. O usuário deve manter o Chrome e o sistema operacional atualizados e usar um perfil protegido.</p>
   </section>
 
   <section class="card">
-    <h2>9. Limited Use</h2>
+    <h2>10. Limited Use</h2>
     <p>O uso de informações recebidas de APIs do Google observará a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Limited Use:</p>
-    <p><em>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</em></p>
+    <blockquote><em>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</em></blockquote>
   </section>
 
   <section class="card">
-    <h2>10. Alterações e contato</h2>
-    <p>Alterações materiais serão refletidas na versão desta política e, quando necessário, na versão da extensão. O consentimento local de privacidade é versionado para que mudanças relevantes possam ser apresentadas novamente.</p>
-    <p>Dúvidas, solicitações de acesso/exclusão de dados locais e relatos de problemas: <a href="https://github.com/Rilen/ponto-semanal/issues">canal público do projeto no GitHub</a>.</p>
+    <h2>11. Alterações</h2>
+    <p>Alterações materiais nesta política serão refletidas na versão do documento e, quando necessário, na versão da extensão. O consentimento local de privacidade é versionado para que mudanças relevantes possam ser apresentadas novamente.</p>
+  </section>
+
+  <section class="card">
+    <h2>12. Contato</h2>
+    <p>Dúvidas, solicitações de acesso ou exclusão de dados locais e relatos de problemas:</p>
+    <p><strong><a href="https://github.com/Rilen/ponto-semanal/issues">https://github.com/Rilen/ponto-semanal/issues</a></strong> (canal público do projeto)</p>
+    <p>Não usar endereço, marca ou canal institucional sem autorização.</p>
   </section>
 
   <footer>
-    <p>Ponto Semanal 1.4.1 — página informativa independente. Não é sistema oficial de ponto e não possui vínculo ou endosso institucional.</p>
+    <p>Ponto Semanal 1.5.0 — página informativa independente. Não é sistema oficial de ponto e não possui vínculo ou endosso institucional.</p>
     <p><a href="index.html">Voltar</a></p>
   </footer>
 </main>
